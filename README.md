@@ -26,3 +26,9 @@
 ```console
 python3 server.py
 ```
+
+#### golang
+
+```console
+go run server.go
+```
