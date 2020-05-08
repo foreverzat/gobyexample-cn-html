@@ -4,3 +4,22 @@
 如果您想学习 Go 语言基础知识，不要犹豫，请直接前往 [Go by Example](https://gobyexample-cn.github.io/) 开始学习！
 
 如果您觉得本项目还不错的话，记得回来给个 Star 哦 o(*￣▽￣*)ブ
+
+### 启动
+##### nginx
+
+```console
+location / {
+            root /home/gobyexample/public;
+        if (!-e $request_filename){
+            rewrite ^(.*)$ /$1.html last;
+            break;
+        }
+        index index.html;
+    }
+```
+
+##### python
+```console
+python3 server.py
+```
