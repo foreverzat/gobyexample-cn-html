@@ -11,7 +11,7 @@
 #### nginx
 
 ```console
-location / {
+    location / {
         root /home/gobyexample/public;
         if (!-e $request_filename){
             rewrite ^(.*)$ /$1.html last;
